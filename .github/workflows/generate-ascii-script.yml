@@ -1,4 +1,4 @@
-name: Generate ASCII
+name: Execute shell script
 
 on: push
 #on: [push, fork]
@@ -10,5 +10,8 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
 
+            - name: Read and list message
+              run: ls -lart
+              
             - name: Install cowsay program
               run: ./ascii.sh
