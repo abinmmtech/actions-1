@@ -1,0 +1,14 @@
+name: Generate ASCII
+
+on: push
+#on: [push, fork]
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Install cowsay program
+              run: ./ascii.sh
