@@ -22,5 +22,5 @@ jobs:
             - name: Read file
               run: cat dragon.txt
 
-            - name: Read and list messages
+            - name: Read and list message
               run: ls -lart
