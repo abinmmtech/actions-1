@@ -15,5 +15,5 @@ jobs:
 
             - name: Install cowsay program
               run: |
-                chmod +x  
+                chmod +x ./ascii.sh 
                 ./ascii.sh
