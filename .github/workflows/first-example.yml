@@ -19,8 +19,11 @@ jobs:
             - name: Read file
               run: cat README.md
 
-            - name: Welcome message
+            - name: Read and list messages
               run: |
                 echo "My first worklfow"    
                 ls -lart
                 cat README.md
+
+            - name: Generate ASCII art work
+              run: cowsay -f dragon "Run for cover, I am a DRAGON---RAWR" >> dragon.txt    
